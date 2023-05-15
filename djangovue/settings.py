@@ -34,6 +34,10 @@ CORS_ORIGIN_WHITELIST = [
 ]
 
 
+CURRENCY_CODE = 'CLP'
+
+
+
 # Application definition
 
 INSTALLED_APPS = [

@@ -1,14 +1,16 @@
+
 {% extends 'base.html' %}
 
 {% block content %}
+
     <div class="card mt-2">
         <div class="card-header bg-success"></div>
         <div class="card-body">
           <h1>{{ element.title }}</h1>
 
         <a class="btn btn-success" href="{% url 'store:make_pay_paypal' element.id %}">Comprar por PayPal</a>
-
-          <p>{{ element.description }}</p>
+        
+          <p>{{ element.price}}</p>
         </div>
     </div>
 {% endblock %}

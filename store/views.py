@@ -5,7 +5,8 @@ from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from paypalcheckoutsdk.orders import OrdersCreateRequest
 from paypalhttp import HttpError
-
+import requests
+import json
 
 from paypalcheckoutsdk.orders import OrdersCaptureRequest
 from paypalcheckoutsdk.core import PayPalHttpClient, SandboxEnvironment
@@ -49,6 +50,8 @@ class DetailView(generic.DeleteView):
 
 @login_required
 def make_pay_paypal(request, pk):
+
+    print(pagar())
 
     element = get_object_or_404(Element,pk = pk)
 
@@ -164,3 +167,24 @@ def bought(request):
 @login_required
 def paypal_cancel(request):
     return render(request,'store/paypal/cancel.html')
+
+def pagar():
+    
+    import requests
+
+    url = "https://api.apilayer.com/exchangerates_data/convert?to=clp&from=usd&amount=1"
+
+    payload = {}
+    headers = {
+        "apikey": "EIiVh6InaVx5mS40ugkEqaRcO8BSWhwZ"
+    }
+
+    response = requests.request("GET", url, headers=headers, data=payload)
+
+    status_code = response.status_code
+    result = response.text
+
+    datos_diccionario = json.loads(result)
+    print(datos_diccionario)
+    datos_diccionario['result']
+    return datos_diccionario['result'] 
