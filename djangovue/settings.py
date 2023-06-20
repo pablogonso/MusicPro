@@ -37,9 +37,9 @@ CORS_ORIGIN_WHITELIST = [
 # Application definition
 
 INSTALLED_APPS = [
-    
+
     'account',
-   # 'grappelli',
+    # 'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,7 +55,8 @@ INSTALLED_APPS = [
     'listelement',
     'comment',
     'store',
-    
+    'currency_conversion'
+
 ]
 
 MIDDLEWARE = [
@@ -112,7 +113,6 @@ DATABASES = {
 }
 
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
@@ -138,7 +138,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en'
 
 LOCALE_PATHS = [
-    os.path.join(BASE_DIR,'locale')
+    os.path.join(BASE_DIR, 'locale')
 ]
 
 TIME_ZONE = 'UTC'
@@ -155,10 +155,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'uploads')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = '/uploads/'
 
-LOGOUT_REDIRECT_URL= '/accounts/login'
+LOGOUT_REDIRECT_URL = '/accounts/login'
 
 EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = 'ec5cbede982042'
@@ -182,18 +182,18 @@ LOGGING = {
         'handlers': ['file'],
         'level': 'DEBUG',
     },
-     'loggers': {
+    'loggers': {
         'django': {
             'handlers': ['file'],
             'level': 'INFO',
             'propagate': True,
-            
+
         },
     },
 }
 
 
-#paquetes
+# paquetes
 
 THUMBNAIL_ALIASES = {
     '': {
@@ -223,7 +223,7 @@ INTERNAL_IPS = [
     'debug_toolbar.panels.profiling.ProfilingPanel',
 ]"""
 
-#CONFIGURACIONES DE PAYPAL
+# CONFIGURACIONES DE PAYPAL
 PAYPAL_CLIENT_ID = "AUu2CpCBrva4gbNjqB5IvdV16V93hPLgumgyL7iJgQPs64Rdrp35EepAGDE8GtDlZIwg7i44FrGDY8Eq"
 PAYPAL_CLIENT_SECRET = "EDuiWwKXnXOBtCyjYFmFiriQjvroIA8kiRdsC2iNnCqAwKwxLi_-hOsZDQlZo7YPsrHDkZCK4-Lnn0iI"
 PAYPAL_CLIENT_MODO = "sandbox"

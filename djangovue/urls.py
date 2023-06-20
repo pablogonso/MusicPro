@@ -16,13 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
-
+from store import views
 from django.conf import settings
 from django.conf.urls.static import static
+from views import convert_currency
 
 urlpatterns = [
-     path('grappelli/', include('grappelli.urls')), # grappelli URLS
+    path('grappelli/', include('grappelli.urls')),  # grappelli URLS
     path('admin/', admin.site.urls),
+    
     path('api/', include('listelement.urls')),
     path('comment/', include('comment.urls')),
     path('accounts/', include('account.urls')),
@@ -30,11 +32,14 @@ urlpatterns = [
     path('', include('store.urls')),
     path(
         'change-password/',
-        auth_views.PasswordChangeView.as_view(template_name='registration/password_change_form.html'),
+        auth_views.PasswordChangeView.as_view(
+            template_name='registration/password_change_form.html'),
     ),
+    path('convert/', convert_currency, name='convert_currency')
 ]
 
 if settings.DEBUG:
     import debug_toolbar
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
     urlpatterns += path('__debug__/', include(debug_toolbar.urls)),

@@ -1,10 +1,13 @@
-from django.shortcuts import render, redirect,reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.core.paginator import Paginator
 from django.views import generic
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from paypalcheckoutsdk.orders import OrdersCreateRequest
-from paypalhttp import HttpError
+from paypalhttp import HttpError, http_response 
+from .forms import ProductForm
+from listelement import models
+
 
 
 from paypalcheckoutsdk.orders import OrdersCaptureRequest
@@ -30,16 +33,16 @@ def index(request):
 
     if category_id:
         elements = elements.filter(category_id=category_id)
-    
 
-    elements = elements.filter(type = 1)
-    paginator = Paginator(elements, 5)
+    elements = elements.filter()
+    paginator = Paginator(elements, 50)
     categories = Category.objects.all()
 
     page_number = request.GET.get('page')
     elements_page = paginator.get_page(page_number)
 
-    return render(request, 'store/index.html', {'elements' : elements_page,'categories':categories, 'search':search, 'category_id':category_id})
+    return render(request, 'store/index.html', {'elements': elements_page, 'categories': categories, 'search': search, 'category_id': category_id})
+
 
 class DetailView(generic.DeleteView):
     model = Element
@@ -47,22 +50,23 @@ class DetailView(generic.DeleteView):
     slug_field = 'url_clean'
     slug_url_kwarg = 'url_clean'
 
+
+
+
 @login_required
 def make_pay_paypal(request, pk):
 
-    element = get_object_or_404(Element,pk = pk)
-
+    element = get_object_or_404(Element, pk=pk)
 
     # Creating Access Token for Sandbox
     client_id = settings.PAYPAL_CLIENT_ID
     client_secret = settings.PAYPAL_CLIENT_SECRET
     # Creating an environment
     environment = SandboxEnvironment(
-    client_id=client_id, client_secret=client_secret)
+        client_id=client_id, client_secret=client_secret)
     client = PayPalHttpClient(environment)
 
     requestPayPal = OrdersCreateRequest()
-
 
     requestPayPal.prefer('return=representation')
 
@@ -77,38 +81,35 @@ def make_pay_paypal(request, pk):
                     }
                 }
             ],
-            "application_context":{
+            "application_context": {
                 "return_url": "http://127.0.0.1:8000/product/paypal/success/%s" % element.id,
                 "cancel_url": "http://127.0.0.1:8000/product/paypal/cancel"
             }
         }
     )
 
-
     try:
         # Call API with your client and get a response for your call
         response = client.execute(requestPayPal)
 
-        if response.result.status == "CREATED": 
+        if response.result.status == "CREATED":
             approval_url = str(response.result.links[1].href)
             print(approval_url)
 
-            return render(request, 'store/paypal/buy.html', {'element': element, 'approval_url' : approval_url })
+            return render(request, 'store/paypal/buy.html', {'element': element, 'approval_url': approval_url})
 
     except IOError as ioe:
-        print (ioe)
+        print(ioe)
         if isinstance(ioe, HttpError):
             # Something went wrong server-side
-            print (ioe.status_code)
-    
+            print(ioe.status_code)
 
-       
 
 @login_required
-def paypal_success(request,pk):
+def paypal_success(request, pk):
 
     element = get_object_or_404(Element, pk=pk)
-   
+
     # Creating Access Token for Sandbox
     client_id = settings.PAYPAL_CLIENT_ID
     client_secret = settings.PAYPAL_CLIENT_SECRET
@@ -117,12 +118,10 @@ def paypal_success(request,pk):
         client_id=client_id, client_secret=client_secret)
     client = PayPalHttpClient(environment)
 
-   
     ordenId = request.GET.get('token')
     payerId = request.GET.get('PayerID')
 
     requestPayPal = OrdersCaptureRequest("ordenId")
-
 
     try:
         # Call API with your client and get a response for your call
@@ -142,25 +141,107 @@ def paypal_success(request,pk):
     except IOError as ioe:
         if isinstance(ioe, HttpError):
             # Something went wrong server-side
-            print (ioe.status_code)
-            print (ioe.headers)
-            print (ioe)
+            print(ioe.status_code)
+            print(ioe.headers)
+            print(ioe)
         else:
             # Something went wrong client side
-            print (ioe)
+            print(ioe)
 
+    return render(request, 'store/paypal/success.html')
 
-    return render(request,'store/paypal/success.html')
 
 @login_required
 def detail_pay(request, pk):
     payment = get_object_or_404(Payment, pk=pk)
-    return render(request,'store/payment/detail.html',{'payment':payment})
+    return render(request, 'store/payment/detail.html', {'payment': payment})
+
 
 @login_required
 def bought(request):
-    return render(request,'store/payment/bought.html',{'payments':Payment.objects.select_related('element').filter(user = request.user)})
+    return render(request, 'store/payment/bought.html', {'payments': Payment.objects.select_related('element').filter(user=request.user)})
+
 
 @login_required
 def paypal_cancel(request):
-    return render(request,'store/paypal/cancel.html')
+    return render(request, 'store/paypal/cancel.html')
+
+
+
+def pagar():
+
+    import requests
+
+    url = "https://api.apilayer.com/exchangerates_data/convert?to=clp&from=usd&amount=1"
+
+    payload = {}
+    headers = {
+        "apikey": "EIiVh6InaVx5mS40ugkEqaRcO8BSWhwZ"
+    }
+
+    response = requests.request("GET", url, headers=headers, data=payload)
+
+    status_code = response.status_code
+    result = response.text
+
+    datos_diccionario = json.loads(result)
+    print(datos_diccionario)
+    datos_diccionario['result']
+    return datos_diccionario['result']
+
+
+def agregar(request):
+    
+    form = ProductForm
+
+    if request.method == "POST":
+        form = ProductForm(request.POST)
+        if form.is_valid():
+        
+
+            product = Element()
+
+            product.title = form.cleaned_data['title']
+            product.description = form.cleaned_data['description']
+            product.price = form.cleaned_data['price']
+            product.category = form.cleaned_data['category']
+            product.type = form.cleaned_data['type']
+            
+        
+            product.save()
+
+    else:        
+        print("invalido")
+
+
+
+    return render (request, 'agregar.html', {'form': form})
+
+
+def modificar(request,pk):
+
+    product = get_object_or_404(Element, id=pk)
+    
+    form = ProductForm(initial={'title': product.title, 'description': product.description,
+                       'price': product.price, 'category': product.category, 'type': product.type})
+
+    if request.method  == "POST":
+        form = ProductForm(request.POST)
+        if form.is_valid():
+
+            
+
+            product.title = form.cleaned_data['title']
+            product.description = form.cleaned_data['description']
+            product.price = form.cleaned_data['price']
+            product.category = form.cleaned_data['category']
+            product.type = form.cleaned_data['type']
+
+            product.save()
+
+    else:
+        print("invalido")
+
+    return render(request, 'agregar.html', {'form': form})
+
+

@@ -1,7 +1,7 @@
 nav {
     background-color: #fff;
     color: #000;
-    /*position: fixed; arreglar esta linea de css */
+    /* position: fixed; */
     width: 100%;
     top: 0;
     left: 0;
@@ -76,4 +76,9 @@ nav li a:hover:after {
 nav li.active a:after {
     visibility: visible;
     width: 100%;
+}
+
+
+#flex{
+    background-color: red;
 }

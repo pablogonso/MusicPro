@@ -1,0 +1,4 @@
+requests
+django
+gunicorn
+currency_conversion

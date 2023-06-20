@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tu formulario</title>
+  <link rel="stylesheet" href="{% static 'estilo2.css' %}">
+</head>
+<body>
+<header>
+
+  <form method="post">
+
+     {% csrf_token %}
+
+     {{ form }}
+
+     <button id ="guardar" type="submit">Guardar</button> 
+</head> 
+</body>
+</form>
+</header>
+{% endblock %}
+
+
+
+  <form method="post" id="flex">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Guardar</button> 
+  </form>
+</body>
+</html>

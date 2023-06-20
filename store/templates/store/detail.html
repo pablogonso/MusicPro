@@ -5,7 +5,9 @@
         <div class="card-header bg-success"></div>
         <div class="card-body">
           <h1>{{ element.title }}</h1>
-
+          <h1>{{ element.descrption }}</h1>
+          <h1>{{ element.category }}</h1>
+          <h1>{{ element.price }}</h1>
         <a class="btn btn-success" href="{% url 'store:make_pay_paypal' element.id %}">Comprar por PayPal</a>
 
           <p>{{ element.description }}</p>

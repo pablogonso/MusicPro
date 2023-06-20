@@ -1,0 +1,27 @@
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 10px;
+    gap: 15px;
+    font-size: 18px;
+}
+
+#guardar{
+    border: none;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    background-color: rgb(23, 190, 23);
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+
+#guardar:hover{
+    background-color: rgb(20, 107, 20);
+    transition: 0.8s;
+}

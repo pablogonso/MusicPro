@@ -1,13 +1,13 @@
 {% load static %}
 
 <link rel="stylesheet" href="{% static 'style.css' %}">
-
 <header>
   <nav>
     <ul>
-      <li><a href="#">Inicio</a></li>
+      <li><a href="{% url 'store:index' %}">Inicio</a></li>
       <li><a href="#">Acerca de</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="{% url 'comment:contact' %}">Contacto</a></li>
+      
     </ul>
   </nav>
 </header>
