@@ -27775,3 +27775,1841 @@ https://api.sandbox.paypal.com:443 "POST /v2/checkout/orders HTTP/1.1" 201 752
 "GET /product/59 HTTP/1.1" 200 11227
 "GET /?category_id= HTTP/1.1" 200 14888
 "GET /?category_id= HTTP/1.1" 200 14888
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 14877
+"GET / HTTP/1.1" 200 14877
+"GET /static/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 159521
+"GET /static/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 159521
+"GET /static/style.css HTTP/1.1" 200 1444
+"GET /static/style.css HTTP/1.1" 200 1444
+"GET /static/estilo2.css HTTP/1.1" 200 477
+"GET /static/estilo2.css HTTP/1.1" 200 477
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12378
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12378
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+"GET /static/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 60016
+"GET /static/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 60016
+"GET /static/js/jquery-3.4.1.min.js HTTP/1.1" 200 88147
+"GET /static/js/jquery-3.4.1.min.js HTTP/1.1" 200 88147
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 14180
+"GET /favicon.ico HTTP/1.1" 404 14180
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 14875
+"GET / HTTP/1.1" 200 14875
+"GET /product/59 HTTP/1.1" 200 11228
+"GET /product/59 HTTP/1.1" 200 11228
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Duoc\Integracion de plataformas\v2\MusicPro\MusicPro\MusicPro\store\views.py", line 42, in index
+    elements_page = paginator.get_page(page_number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 71, in get_page
+    return self.page(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 75, in page
+    number = self.validate_number(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 53, in validate_number
+    if number > self.num_pages:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 102, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 96, in count
+    return c()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 552, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 537, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Duoc\Integracion de plataformas\v2\MusicPro\MusicPro\MusicPro\store\views.py", line 42, in index
+    elements_page = paginator.get_page(page_number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 71, in get_page
+    return self.page(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 75, in page
+    number = self.validate_number(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 53, in validate_number
+    if number > self.num_pages:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 102, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 96, in count
+    return c()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 552, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 537, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+"GET / HTTP/1.1" 500 175410
+"GET / HTTP/1.1" 500 175410
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 14179
+"GET /favicon.ico HTTP/1.1" 404 14179
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Duoc\Integracion de plataformas\v2\MusicPro\MusicPro\MusicPro\store\views.py", line 42, in index
+    elements_page = paginator.get_page(page_number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 71, in get_page
+    return self.page(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 75, in page
+    number = self.validate_number(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 53, in validate_number
+    if number > self.num_pages:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 102, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 96, in count
+    return c()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 552, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 537, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Duoc\Integracion de plataformas\v2\MusicPro\MusicPro\MusicPro\store\views.py", line 42, in index
+    elements_page = paginator.get_page(page_number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 71, in get_page
+    return self.page(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 75, in page
+    number = self.validate_number(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 53, in validate_number
+    if number > self.num_pages:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 102, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 96, in count
+    return c()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 552, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 537, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+"GET / HTTP/1.1" 500 175381
+"GET / HTTP/1.1" 500 175381
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Duoc\Integracion de plataformas\v2\MusicPro\MusicPro\MusicPro\store\views.py", line 42, in index
+    elements_page = paginator.get_page(page_number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 71, in get_page
+    return self.page(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 75, in page
+    number = self.validate_number(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 53, in validate_number
+    if number > self.num_pages:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 102, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 96, in count
+    return c()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 552, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 537, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.DatabaseError: ORA-00942: table or view does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Duoc\Integracion de plataformas\v2\MusicPro\MusicPro\MusicPro\store\views.py", line 42, in index
+    elements_page = paginator.get_page(page_number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 71, in get_page
+    return self.page(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 75, in page
+    number = self.validate_number(number)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 53, in validate_number
+    if number > self.num_pages:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 102, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\paginator.py", line 96, in count
+    return c()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 552, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 537, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.DatabaseError: ORA-00942: table or view does not exist
+"GET / HTTP/1.1" 500 175407
+"GET / HTTP/1.1" 500 175407
+C:\Duoc\Integracion de plataformas\v2\MusicPro\MusicPro\MusicPro\djangovue\settings.py changed, reloading.
+C:\Duoc\Integracion de plataformas\v2\MusicPro\MusicPro\MusicPro\djangovue\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 14876
+"GET / HTTP/1.1" 200 14876
+"GET /agregar HTTP/1.1" 301 0
+"GET /agregar HTTP/1.1" 301 0
+"GET /agregar/ HTTP/1.1" 200 11919
+"GET /agregar/ HTTP/1.1" 200 11919
+"GET /modificar/59 HTTP/1.1" 200 12878
+"GET /modificar/59 HTTP/1.1" 200 12878
+"GET /agregar/ HTTP/1.1" 200 11918
+"GET /agregar/ HTTP/1.1" 200 11918
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 14876
+"GET / HTTP/1.1" 200 14876
+"GET / HTTP/1.1" 200 14874
+"GET / HTTP/1.1" 200 14874
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 14875
+"GET / HTTP/1.1" 200 14875
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 14179
+"GET /favicon.ico HTTP/1.1" 404 14179
+"GET /api/element/1 HTTP/1.1" 301 0
+"GET /api/element/1 HTTP/1.1" 301 0
+Not Found: /api/element/1/
+Not Found: /api/element/1/
+"GET /api/element/1/ HTTP/1.1" 404 19653
+"GET /api/element/1/ HTTP/1.1" 404 19653
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+"GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+"GET /api/element HTTP/1.1" 301 0
+"GET /api/element HTTP/1.1" 301 0
+"GET /api/element/ HTTP/1.1" 200 25759
+"GET /api/element/ HTTP/1.1" 200 25759
+Not Found: /admin
+Not Found: /admin
+Not Found: /api
+Not Found: /api
+Not Found: /comment
+Not Found: /comment
+Not Found: /accounts
+Not Found: /accounts
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/element/21/
+Not Found: /api/element/21/
+"GET /api/element/21/ HTTP/1.1" 404 23
+"GET /api/element/21/ HTTP/1.1" 404 23
+"GET /api/element/51/ HTTP/1.1" 200 367
+"GET /api/element/51/ HTTP/1.1" 200 367
+"GET /api/element/51/ HTTP/1.1" 200 367
+"GET /api/element/51/ HTTP/1.1" 200 367
+Method Not Allowed: /api/element/1/
+Method Not Allowed: /api/element/1/
+"POST /api/element/1/ HTTP/1.1" 405 41
+"POST /api/element/1/ HTTP/1.1" 405 41
+Not Found: /api/element/1/
+Not Found: /api/element/1/
+"PUT /api/element/1/ HTTP/1.1" 404 23
+"PUT /api/element/1/ HTTP/1.1" 404 23
+Method Not Allowed: /api/element/1/
+Method Not Allowed: /api/element/1/
+"POST /api/element/1/ HTTP/1.1" 405 41
+"POST /api/element/1/ HTTP/1.1" 405 41
+Method Not Allowed: /api/element/51/
+Method Not Allowed: /api/element/51/
+"POST /api/element/51/ HTTP/1.1" 405 41
+"POST /api/element/51/ HTTP/1.1" 405 41
+Method Not Allowed: /api/element/51/
+Method Not Allowed: /api/element/51/
+"POST /api/element/51/ HTTP/1.1" 405 41
+"POST /api/element/51/ HTTP/1.1" 405 41
+Method Not Allowed: /api/element/51/
+Method Not Allowed: /api/element/51/
+"POST /api/element/51/ HTTP/1.1" 405 41
+"POST /api/element/51/ HTTP/1.1" 405 41
+"GET /api/element/51/ HTTP/1.1" 200 367
+"GET /api/element/51/ HTTP/1.1" 200 367
+Method Not Allowed: /api/element/1/
+Method Not Allowed: /api/element/1/
+"POST /api/element/1/?Tittle=test1&url_clean=&Description=test1&Category_id=22&Type_id=56&Price=100 HTTP/1.1" 405 41
+"POST /api/element/1/?Tittle=test1&url_clean=&Description=test1&Category_id=22&Type_id=56&Price=100 HTTP/1.1" 405 41
+Not Found: /api/element/1/
+Not Found: /api/element/1/
+"PUT /api/element/1/?Tittle=test1&url_clean=&Description=test1&Category_id=22&Type_id=56&Price=100 HTTP/1.1" 404 23
+"PUT /api/element/1/?Tittle=test1&url_clean=&Description=test1&Category_id=22&Type_id=56&Price=100 HTTP/1.1" 404 23
+Not Found: /api/element/1/
+Not Found: /api/element/1/
+"PUT /api/element/1/?Tittle=test1&url_clean=test&Description=test1&Category_id=22&Type_id=56&Price=100 HTTP/1.1" 404 23
+"PUT /api/element/1/?Tittle=test1&url_clean=test&Description=test1&Category_id=22&Type_id=56&Price=100 HTTP/1.1" 404 23
+Method Not Allowed: /api/element/1/
+Method Not Allowed: /api/element/1/
+"POST /api/element/1/?Tittle=test1&url_clean=test&Description=test1&Category_id=22&Type_id=56&Price=100 HTTP/1.1" 405 41
+"POST /api/element/1/?Tittle=test1&url_clean=test&Description=test1&Category_id=22&Type_id=56&Price=100 HTTP/1.1" 405 41
+Not Found: /api/element/1/
+Not Found: /api/element/1/
+"PUT /api/element/1/ HTTP/1.1" 404 23
+"PUT /api/element/1/ HTTP/1.1" 404 23
+Method Not Allowed: /api/element/1/
+Method Not Allowed: /api/element/1/
+"POST /api/element/1/ HTTP/1.1" 405 41
+"POST /api/element/1/ HTTP/1.1" 405 41
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/ HTTP/1.1" 400 119
+"POST /api/element/ HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/ HTTP/1.1" 400 119
+"POST /api/element/ HTTP/1.1" 400 119
+Method Not Allowed: /api/element/
+Method Not Allowed: /api/element/
+"PUT /api/element/ HTTP/1.1" 405 40
+"PUT /api/element/ HTTP/1.1" 405 40
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/ HTTP/1.1" 400 119
+"POST /api/element/ HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/ HTTP/1.1" 400 119
+"POST /api/element/ HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/ HTTP/1.1" 400 119
+"POST /api/element/ HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/ HTTP/1.1" 400 119
+"POST /api/element/ HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/ HTTP/1.1" 400 119
+"POST /api/element/ HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/ HTTP/1.1" 400 119
+"POST /api/element/ HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/ HTTP/1.1" 400 119
+"POST /api/element/ HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/ HTTP/1.1" 400 119
+"POST /api/element/ HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/?id=1 HTTP/1.1" 400 119
+"POST /api/element/?id=1 HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/?id=1 HTTP/1.1" 400 119
+"POST /api/element/?id=1 HTTP/1.1" 400 119
+Method Not Allowed: /api/element/
+Method Not Allowed: /api/element/
+"PUT /api/element/?id=1 HTTP/1.1" 405 40
+"PUT /api/element/?id=1 HTTP/1.1" 405 40
+Method Not Allowed: /api/element/
+Method Not Allowed: /api/element/
+"PUT /api/element/?id=1 HTTP/1.1" 405 40
+"PUT /api/element/?id=1 HTTP/1.1" 405 40
+Method Not Allowed: /api/element/
+Method Not Allowed: /api/element/
+"PUT /api/element/?id=1 HTTP/1.1" 405 40
+"PUT /api/element/?id=1 HTTP/1.1" 405 40
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/?id=1 HTTP/1.1" 400 119
+"POST /api/element/?id=1 HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/?id=1 HTTP/1.1" 400 119
+"POST /api/element/?id=1 HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/?id=1 HTTP/1.1" 400 119
+"POST /api/element/?id=1 HTTP/1.1" 400 119
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/?id=1 HTTP/1.1" 400 83
+"POST /api/element/?id=1 HTTP/1.1" 400 83
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/?id=1 HTTP/1.1" 400 43
+"POST /api/element/?id=1 HTTP/1.1" 400 43
+Bad Request: /api/element/
+Bad Request: /api/element/
+"POST /api/element/?id=1 HTTP/1.1" 400 43
+"POST /api/element/?id=1 HTTP/1.1" 400 43
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+"POST /api/element/?id=1 HTTP/1.1" 500 230487
+"POST /api/element/?id=1 HTTP/1.1" 500 230487
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+"POST /api/element/?id=1 HTTP/1.1" 500 230486
+"POST /api/element/?id=1 HTTP/1.1" 500 230486
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+"POST /api/element/?id=1 HTTP/1.1" 500 231358
+"POST /api/element/?id=1 HTTP/1.1" 500 231358
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+"POST /api/element/?id=1 HTTP/1.1" 500 231354
+"POST /api/element/?id=1 HTTP/1.1" 500 231354
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+"POST /api/element/?id=1 HTTP/1.1" 500 231354
+"POST /api/element/?id=1 HTTP/1.1" 500 231354
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+Internal Server Error: /api/element/
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+cx_Oracle.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 247, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 168, in _record
+    return method(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\oracle\base.py", line 552, in execute
+    return self.cursor.execute(query, self._param_generator(params))
+django.db.utils.IntegrityError: ORA-01400: cannot insert NULL into ("MUSIC3"."LISTELEMENT_ELEMENT"."CATEGORY_ID")
+"POST /api/element/?id=1 HTTP/1.1" 500 231348
+"POST /api/element/?id=1 HTTP/1.1" 500 231348
+"DELETE /api/element/51/ HTTP/1.1" 204 0
+"DELETE /api/element/51/ HTTP/1.1" 204 0
+"DELETE /api/element/59/ HTTP/1.1" 204 0
+"DELETE /api/element/59/ HTTP/1.1" 204 0
+"GET /api/element/ HTTP/1.1" 200 24433
+"GET /api/element/ HTTP/1.1" 200 24433
+Unsupported Media Type: /api/element/
+Unsupported Media Type: /api/element/
+"POST /api/element/ HTTP/1.1" 415 62
+"POST /api/element/ HTTP/1.1" 415 62
+Unsupported Media Type: /api/element/
+Unsupported Media Type: /api/element/
+"POST /api/element/ HTTP/1.1" 415 62
+"POST /api/element/ HTTP/1.1" 415 62
+Internal Server Error: /api/element/1
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/1
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/element/1 HTTP/1.1" 500 70417
+"POST /api/element/1 HTTP/1.1" 500 70417
+Internal Server Error: /api/element/1
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/1
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/element/1 HTTP/1.1" 500 70416
+"POST /api/element/1 HTTP/1.1" 500 70416
+Internal Server Error: /api/element/100
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/100/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/100
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/100/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/element/100 HTTP/1.1" 500 70448
+"POST /api/element/100 HTTP/1.1" 500 70448
+Internal Server Error: /api/element/100
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/100/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/100
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/100/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/element/100 HTTP/1.1" 500 70433
+"PUT /api/element/100 HTTP/1.1" 500 70433
+"GET /api/element/60 HTTP/1.1" 301 0
+"GET /api/element/60 HTTP/1.1" 301 0
+"GET /api/element/60/ HTTP/1.1" 200 766
+"GET /api/element/60/ HTTP/1.1" 200 766
+"GET /api/element/60 HTTP/1.1" 301 0
+"GET /api/element/60 HTTP/1.1" 301 0
+"GET /api/element/60/ HTTP/1.1" 200 766
+"GET /api/element/60/ HTTP/1.1" 200 766
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/60/?id=200 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/60/?id=200 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/element/60?id=200 HTTP/1.1" 500 70800
+"POST /api/element/60?id=200 HTTP/1.1" 500 70800
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/60/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/60/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/element/60 HTTP/1.1" 500 70804
+"POST /api/element/60 HTTP/1.1" 500 70804
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/60/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/60/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/element/60 HTTP/1.1" 500 70504
+"PUT /api/element/60 HTTP/1.1" 500 70504
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/60/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/60/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/element/60 HTTP/1.1" 500 70418
+"PUT /api/element/60 HTTP/1.1" 500 70418
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/60/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/60/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/element/60 HTTP/1.1" 500 70417
+"PUT /api/element/60 HTTP/1.1" 500 70417
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/60/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/60
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/60/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/element/60 HTTP/1.1" 500 70432
+"POST /api/element/60 HTTP/1.1" 500 70432
+Internal Server Error: /api/element/58
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/58/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/58
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/element/58/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/element/58 HTTP/1.1" 500 70432
+"POST /api/element/58 HTTP/1.1" 500 70432
+"GET /api/element/58 HTTP/1.1" 301 0
+"GET /api/element/58 HTTP/1.1" 301 0
+"GET /api/element/58/ HTTP/1.1" 200 658
+"GET /api/element/58/ HTTP/1.1" 200 658
+Internal Server Error: /api/element/58
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/58/?id=58 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/58
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/58/?id=58 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/element/58?id=58 HTTP/1.1" 500 70773
+"PUT /api/element/58?id=58 HTTP/1.1" 500 70773
+Internal Server Error: /api/element/58
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/58/?id=58 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/element/58
+Traceback (most recent call last):
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\pablo\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/element/58/?id=58 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/element/58?id=58 HTTP/1.1" 500 70773
+"PUT /api/element/58?id=58 HTTP/1.1" 500 70773
+Not Found: /admin
+Not Found: /admin
+Not Found: /api
+Not Found: /api
+Not Found: /comment
+Not Found: /comment
+Not Found: /accounts
+Not Found: /accounts
