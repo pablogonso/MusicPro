@@ -4,4 +4,8 @@ Sigla del ramo y sección: ASY5131-007V
 
 Profesor: Diego Cares
 
-Alumnos: Pablo Gonzalez-Jose Oliany-Nicolas Mallea-Luis Velásquez
+Alumnos: 
+Pablo Gonzalez
+Jose Bautista
+Nicolas Mallea
+Luis Velásquez
